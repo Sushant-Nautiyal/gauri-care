@@ -265,12 +265,31 @@
             margin-top: 30px;
             filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
             animation: pulse 2s infinite ease-in-out;
+            display: flex; /* To align SVG and text */
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* Space between SVG and text */
+            background-color: rgba(0, 0, 0, 0.4); /* Slightly dark background for contrast */
+            border-radius: 10px;
+            padding: 10px 20px;
         }
 
-        .lg-badge img {
-            max-width: 220px;
-            height: auto;
+        .lg-badge svg {
+            /* Inherits color from parent, but explicitly setting */
+            color: var(--white); /* Ensure SVG is white */
+            font-size: 2.8em; /* Adjust size of SVG */
+            width: 1em; /* Adjust width/height as per your SVG's viewBox to control size */
+            height: 1em;
+            vertical-align: middle; /* Align with text */
         }
+
+        .lg-badge span {
+            color: var(--white);
+            font-size: 1.8em; /* Size of "LG Certified" text */
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
 
         /* Services Section */
         .services-section .service-grid {
@@ -696,13 +715,24 @@
             .contact-info-block, .contact-form-block {
                 flex: 1 1 100%; /* Full width on smaller screens */
             }
+
+            .lg-badge {
+                flex-direction: column; /* Stack SVG and text on smaller screens */
+                gap: 5px;
+                padding: 10px 15px;
+            }
+            .lg-badge span {
+                font-size: 1.5em;
+            }
+            .lg-badge svg {
+                font-size: 2.2em; /* Smaller SVG on mobile */
+            }
         }
 
         @media (max-width: 768px) {
             h1 { font-size: 2em; }
             h2 { font-size: 1.8em; margin-bottom: 30px;}
             .hero-section { min-height: 60vh; padding: 80px 0 50px;}
-            .lg-badge img { max-width: 180px; }
             .contact-details p { flex-direction: column; align-items: center; text-align: center; gap: 5px; }
             .contact-details i { margin-bottom: 5px; }
             .testimonial-carousel { justify-content: flex-start; /* Allow scroll on mobile */ }
@@ -763,7 +793,8 @@
                 <h1>24/7 Emergency AC & Refrigeration Repair in Dehradun</h1>
                 <p>Your trusted LG Certified Service Center for homes & businesses. Fast, reliable, and expert solutions.</p>
                 <div class="lg-badge">
-                    <img src="https://via.placeholder.com/220x90?text=LG+CERTIFIED" alt="LG Certified Service Center">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" style="color: white;" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path></svg>
+                    <span>LG Certified</span>
                 </div>
                 <div class="hero-cta-buttons">
                     <a href="https://wa.me/919818662812?text=Hi%20Gauri%20Refrigeration%20Care,%20I%20need%20a%20quote%20for%20AC%20or%20refrigeration%20repair." class="btn btn-whatsapp" target="_blank">
@@ -816,7 +847,7 @@
                     <div class="feature-item animate-on-scroll" style="transition-delay: 0.2s;">
                         <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                         <h3>Local Dehradun Experts</h3>
-                        <p>Proudly serving the Dehradun community with prompt, efficient, and personalized service tailored to your local needs.</p>
+                        <p>Proudly serving the Dehradun community with prompt and efficient service.</p>
                     </div>
                     <div class="feature-item animate-on-scroll" style="transition-delay: 0.3s;">
                         <div class="icon"><i class="fas fa-clipboard-check"></i></div>
@@ -957,7 +988,7 @@
                 <li><a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="#" target="_blank" aria-label="Google My Business"><i class="fab fa-google"></i></a></li>
             </ul>
-            <p>&copy; <span id="current-year-footer"></span> Gauri Refrigeration Care. All Rights Reserved. </p>
+            <p>© <span id="current-year-footer"></span> Gauri Refrigeration Care. All Rights Reserved. </p>
             <p>Crafted with care for Dehradun businesses.</p>
         </div>
     </footer>
