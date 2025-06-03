@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauri Refrigeration Care - 24/7 AC & Refrigeration Repair in Dehradun</title>
+    <meta name="description" content="24/7 Emergency AC & Refrigeration Repair in Dehradun. LG Certified Service Center for Home & Commercial AC, Refrigerators, Inverters, and Electrical solutions.">
+    <link rel="icon" href="https://via.placeholder.com/32x32?text=GRC" type="image/x-icon"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        :root {
+            --primary-red: #E74C3C;
+            --dark-blue: #2C3E50;
+            --text-color: #34495E;
+            --light-gray: #F8F8F8;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-blue);
+            margin-top: 0;
+        }
+
+        h1 { font-size: 2.8em; line-height: 1.2; }
+        h2 { font-size: 2.2em; margin-bottom: 30px; text-align: center;}
+        h3 { font-size: 1.6em; }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-red);
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--dark-blue);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-red);
+            color: var(--white);
+            border: 2px solid var(--primary-red);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-blue);
+            border-color: var(--dark-blue);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--white);
+            color: var(--primary-red);
+            border: 2px solid var(--primary-red);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-red);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 15px 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x1080?text=AC+Refrigeration+Repair') no-repeat center center/cover; /* Replace with your hero image */
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            min-height: 70vh; /* Ensures full screen height */
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2; /* Ensures content is above potential overlays */
+        }
+
+        .hero h1 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .hero-cta-buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+        }
+
+        .lg-badge {
+            margin-top: 30px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+
+        .lg-badge img {
+            max-width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-item {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-item img {
+            max-width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures images cover the area */
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+
+        /* Trust & Credibility Section */
+        .trust-credibility {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .trust-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .trust-item {
+            flex: 1 1 280px; /* Allows items to grow/shrink, min-width 280px */
+            max-width: 350px;
+            padding: 30px;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .trust-item img {
+            max-width: 150px; /* Adjust size for badges/logos */
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .trust-item h3 {
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: var(--white);
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: var(--primary-red);
+            font-weight: bold;
+        }
+
+        .contact-cta {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--primary-red);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2em; }
+            h2 { font-size: 1.8em; }
+            .hero { padding: 80px 0; min-height: 60vh; }
+            .hero-cta-buttons { flex-direction: column; gap: 15px; }
+            .btn { width: 80%; max-width: 300px; } /* Make buttons stack and wider */
+            .service-grid { grid-template-columns: 1fr; }
+            .trust-items { flex-direction: column; align-items: center; }
+            .trust-item { max-width: 90%; }
+            .contact-info { align-items: flex-start; text-align: left; } /* Align contact info to left on small screens */
+            .contact-info p { margin-left: 20px; } /* Indent slightly */
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.6em; }
+            .container { padding: 0 15px; }
+            .hero { padding: 60px 0; min-height: 50vh; }
+            .lg-badge img { max-width: 150px; }
+            .btn { padding: 12px 25px; }
+        }
+
+        /* Basic Glass-morphism (simulated, as real glass-morphism requires backdrop-filter and specific setup) */
+        .glass-effect {
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly translucent white */
+            backdrop-filter: blur(5px); /* This is the key CSS property for glass-morphism */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        /* Applying glass effect to relevant sections/elements if desired, e.g.: */
+        /* .hero-content, .service-item, .trust-item could potentially use this, but for simplicity, we'll keep it minimal */
+
+        /* Animations (simplified, no Framer Motion) */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .slide-up {
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.8s forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /* Apply animations with delay using JavaScript or nth-child for lists */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            Gauri Refrigeration Care - 24/7 Emergency Service in Dehradun: <a href="tel:+919818662812" style="color: yellow;">+91 98186 62812</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1 class="fade-in">24/7 Emergency AC & Refrigeration Repair in Dehradun</h1>
+                <p class="fade-in" style="animation-delay: 0.3s;">Your trusted LG Certified Service Center for homes & businesses.</p>
+                <div class="lg-badge fade-in" style="animation-delay: 0.6s;">
+                    <img src="https://via.placeholder.com/200x80?text=LG+CERTIFIED" alt="LG Certified Service Center">
+                </div>
+                <div class="hero-cta-buttons fade-in" style="animation-delay: 0.9s;">
+                    <a href="https://wa.me/919818662812?text=Hi%20Gauri%20Refrigeration%20Care,%20I%20need%20a%20quote%20for%20AC%20or%20refrigeration%20repair." class="btn btn-primary" target="_blank">
+                        WhatsApp Now
+                    </a>
+                    <a href="tel:+919818662812" class="btn btn-secondary">
+                        Emergency Call
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Expert Services</h2>
+                <div class="service-grid">
+                    <div class="service-item slide-up" style="animation-delay: 0.1s;">
+                        <img src="https://via.placeholder.com/400x250?text=AC+Service" alt="Air Conditioning Services">
+                        <h3>Air Conditioning</h3>
+                        <p>Installation, repair, and routine maintenance for all types of residential and commercial AC units. Keep cool all year round.</p>
+                    </div>
+                    <div class="service-item slide-up" style="animation-delay: 0.3s;">
+                        <img src="https://via.placeholder.com/400x250?text=Refrigeration+Repair" alt="Refrigeration Services">
+                        <h3>Refrigeration Systems</h3>
+                        <p>Expert repair and service for home refrigerators, deep freezers, commercial chillers, and cold storage units.</p>
+                    </div>
+                    <div class="service-item slide-up" style="animation-delay: 0.5s;">
+                        <img src="https://via.placeholder.com/400x250?text=Inverter+Electrical" alt="Inverter and Electrical Services">
+                        <h3>Inverters & Electrical</h3>
+                        <p>Reliable power solutions, inverter installation and repair, and general electrical maintenance for your home or business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-credibility">
+            <div class="container">
+                <h2>Why Choose Gauri Refrigeration Care?</h2>
+                <div class="trust-items">
+                    <div class="trust-item slide-up" style="animation-delay: 0.1s;">
+                        <img src="https://via.placeholder.com/150x80?text=24/7" alt="24/7 Emergency Service">
+                        <h3>24/7 Emergency Service</h3>
+                        <p>We're available around the clock for urgent repairs when you need us most in Dehradun.</p>
+                    </div>
+                    <div class="trust-item slide-up" style="animation-delay: 0.3s;">
+                        <img src="https://via.placeholder.com/150x80?text=LG+Certified" alt="LG Certified Technician">
+                        <h3>LG Certified Technicians</h3>
+                        <p>Our team is factory-trained and certified by LG, ensuring professional and reliable service.</p>
+                    </div>
+                    <div class="trust-item slide-up" style="animation-delay: 0.5s;">
+                        <img src="https://via.placeholder.com/150x80?text=Local+Expert" alt="Local Dehradun Expert">
+                        <h3>Local Dehradun Experts</h3>
+                        <p>Proudly serving the Dehradun community with prompt and efficient service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Get in Touch with Us</h2>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> <a href="tel:+919818662812">+91 98186 62812</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919818662812?text=Hi%20Gauri%20Refrigeration%20Care,%20I%20need%20a%20quote." target="_blank">+91 98186 62812</a></p>
+                    <p><strong>Address:</strong> Gauri Refrigeration Care, [Your Full Business Address Here], Dehradun, Uttarakhand, India</p>
+                    <p>
+                        <a href="https://www.google.com/maps/search/Gauri+Refrigeration+Care+Dehradun" target="_blank" style="color: var(--white); text-decoration: underline;">
+                            View on Google Maps
+                        </a>
+                    </p>
+                </div>
+                <div class="contact-cta">
+                    <a href="https://wa.me/919818662812?text=Hi%20Gauri%20Refrigeration%20Care,%20I%20need%20a%20quote%20for%20AC%20or%20refrigeration%20repair." class="btn btn-primary" target="_blank">
+                        Request a Quote via WhatsApp
+                    </a>
+                    <a href="tel:+919818662812" class="btn btn-secondary">
+                        Call for Immediate Service
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Gauri Refrigeration Care. All rights reserved.</p>
+            <p>Designed for professional service in Dehradun.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Simple Intersection Observer for slide-up and fade-in animations
+        // This will trigger animations as elements scroll into view
+        const animateElements = document.querySelectorAll('.fade-in, .slide-up');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    if (entry.target.classList.contains('fade-in')) {
+                         entry.target.style.animation = 'fadeIn 1s forwards';
+                    } else if (entry.target.classList.contains('slide-up')) {
+                        entry.target.style.animation = 'slideUp 0.8s forwards';
+                    }
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% of element is visible
+
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Manual application of delays for initial load if needed (CSS animation-delay handles it here)
+        // For dynamic content or more complex staggering, JavaScript is needed.
+        // For this simple static page, the CSS `animation-delay` on the HTML elements is sufficient.
+    </script>
+</body>
+</html>
