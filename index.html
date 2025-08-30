@@ -964,7 +964,7 @@
         <div class="container">
             <a href="#" class="logo">
                 <img src="https://raw.githubusercontent.com/Sushant-Nautiyal/gauri-care/main/img/grc%20logo-1.jpg" alt="Gauri Refrigeration Care Logo" class="logo-img">
-                Gauri <span>Refrigeration Care</span>
+                 <span>Gauri Refrigeration Care</span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Home</a></li>
@@ -1282,7 +1282,7 @@
 
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
-                if (entry.is-intersecting) {
+                if (entry.isintersecting) {
                     const delay = parseFloat(entry.target.style.getPropertyValue('--delay') || '0');
                     setTimeout(() => {
                         entry.target.classList.add('is-visible');
