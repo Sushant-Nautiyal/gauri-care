@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gauri Refrigeration Care - 24/7 Emergency AC & Refrigeration Repair in Dehradun</title>
     <meta name="description" content="24/7 Emergency AC & Refrigeration Repair in Dehradun. LG Certified Service Center for Home & Commercial AC, Refrigerators, Inverters, and Electrical solutions. Expert technicians, prompt service.">
-    <link rel="icon" href="https://via.placeholder.com/32x32?text=GRC" type="image/x-icon"> <!-- Placeholder, replace with your logo/favicon -->
-
-    <!-- Google Fonts: Montserrat for headings, Roboto for body -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://via.placeholder.com/32x32?text=GRC" type="image/x-icon"> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
         /* Base Styles & Variables */
@@ -196,11 +194,24 @@
             font-weight: 800;
             color: var(--dark-blue);
             transition: font-size 0.4s ease-in-out;
+            display: flex; /* Make logo a flex container for image and text */
+            align-items: center; /* Vertically align items */
+            gap: 10px; /* Space between logo image and text */
+        }
+
+        .navbar .logo .logo-img {
+            height: 40px; /* Adjust as needed */
+            width: auto;
+            transition: height 0.4s ease-in-out;
         }
 
         .navbar.scrolled .logo {
             font-size: 1.7em; /* Smaller logo when scrolled */
         }
+        .navbar.scrolled .logo .logo-img {
+            height: 30px; /* Smaller logo image when scrolled */
+        }
+
 
         .navbar .logo span {
             color: var(--primary-red);
@@ -941,15 +952,18 @@
 </head>
 <body>
 
-    <!-- Preloader -->
-    <div id="preloader">
+    
+<div id="preloader">
         <div class="spinner"></div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
+    
+<nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Gauri <span>Refrigeration Care</span></a>
+            <a href="#" class="logo">
+                <img src="img/grc logo-1.jpg" alt="Gauri Refrigeration Care Logo" class="logo-img">
+                Gauri <span>Refrigeration Care</span>
+            </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -970,14 +984,14 @@
     </nav>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
+        
+<section id="hero" class="hero-section">
             <div class="container hero-content">
                 <h1>24/7 Emergency AC & Refrigeration Repair in Dehradun</h1>
                 <p>Your trusted LG Certified Service Center for homes & businesses. Fast, reliable, and expert solutions.</p>
                 <div class="lg-badge">
-                    <!-- LG Certified SVG Icon -->
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" style="color: white;" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path></svg>
+                    
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" style="color: white;" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path></svg>
                     <span>LG Certified</span>
                 </div>
                 <div class="hero-cta-buttons">
@@ -991,8 +1005,8 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section section-padding bg-light-blue">
+        
+<section id="services" class="services-section section-padding bg-light-blue">
             <div class="container">
                 <h2 class="animate-on-scroll">Our Expert Services</h2>
                 <div class="service-grid">
@@ -1015,8 +1029,8 @@
             </div>
         </section>
 
-        <!-- Why Choose Us Section -->
-        <section id="why-choose-us" class="why-choose-us-section section-padding">
+        
+<section id="why-choose-us" class="why-choose-us-section section-padding">
             <div class="container">
                 <h2 class="animate-on-scroll">Why Choose Gauri Refrigeration Care?</h2>
                 <div class="features-grid">
@@ -1054,46 +1068,46 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials-section section-padding">
+        
+<section id="testimonials" class="testimonials-section section-padding">
             <div class="container">
                 <h2 class="animate-on-scroll">What Our Customers Say</h2>
                 <div class="testimonial-carousel-wrapper">
                     <div class="testimonial-carousel animate-on-scroll" id="testimonialCarousel">
-                        <!-- Testimonial 1 -->
-                        <div class="testimonial-card" style="--delay: 0s;">
+                        
+<div class="testimonial-card" style="--delay: 0s;">
                             <p>"Gauri Refrigeration Care provided excellent service for my AC repair. The technician was prompt, professional, and fixed the issue quickly. Highly recommended in Dehradun!"</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                             <div class="author">- Rajesh Kumar</div>
                         </div>
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-card" style="--delay: 0.1s;">
+                        
+<div class="testimonial-card" style="--delay: 0.1s;">
                             <p>"My refrigerator stopped working suddenly. I called Gauri Refrigeration, and they arrived within hours. Fantastic emergency service and fair pricing!"</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                             </div>
                             <div class="author">- Priya Sharma</div>
                         </div>
-                        <!-- Testimonial 3 -->
-                        <div class="testimonial-card" style="--delay: 0.2s;">
+                        
+<div class="testimonial-card" style="--delay: 0.2s;">
                             <p>"Needed an inverter installed, and Gauri Refrigeration did a clean, efficient job. Their electrical services are reliable. Very happy with the work."</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                             <div class="author">- Amit Singh</div>
                         </div>
-                        <!-- Testimonial 4 -->
-                        <div class="testimonial-card" style="--delay: 0.3s;">
+                        
+<div class="testimonial-card" style="--delay: 0.3s;">
                             <p>"Professional and courteous staff. They diagnosed my AC problem quickly and explained everything clearly. Trustworthy service in Dehradun."</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                             <div class="author">- Divya Gupta</div>
                         </div>
-                         <!-- Testimonial 5 -->
-                        <div class="testimonial-card" style="--delay: 0.4s;">
+                         
+<div class="testimonial-card" style="--delay: 0.4s;">
                             <p>"Excellent maintenance service for my commercial chiller. Gauri Refrigeration Care keeps our business running smoothly. Impressed!"</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1109,8 +1123,8 @@
             </div>
         </section>
 
-        <!-- Mid-page Call to Action -->
-        <section class="mid-cta-section section-padding">
+        
+<section class="mid-cta-section section-padding">
             <div class="container animate-on-scroll">
                 <h2>Need Immediate Assistance in Dehradun?</h2>
                 <p>Don't let a faulty AC or refrigerator disrupt your peace. Contact Gauri Refrigeration Care for fast and reliable repair services.</p>
@@ -1125,8 +1139,8 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
+        
+<section id="contact" class="contact-section section-padding">
             <div class="container">
                 <h2 class="animate-on-scroll">Contact Gauri Refrigeration Care</h2>
                 <div class="contact-content">
@@ -1137,14 +1151,14 @@
                             <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/919818662812?text=Hi%20Gauri%20Refrigeration%20Care,%20I%20have%20a%20query." target="_blank">+91 98186 62812</a></p>
                             <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@gaurirefrigerationcare.com">info@gaurirefrigerationcare.com</a></p>
                             <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Gauri Refrigeration Care, [Your Full Business Address Here, e.g., Rajpur Road], Dehradun, Uttarakhand, India</p>
-                            <!-- Replace with your actual Google Map Embed Code (from Google Maps 'Share' -> 'Embed a map') -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.5779776943714!2d78.02685741517743!3d30.3164972817865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c80211%3A0x4a4a5a5a5a5a5a5a!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                            
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.5779776943714!2d78.02685741517743!3d30.3164972817865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c80211%3A0x4a4a5a5a5a5a5a5a!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                     <div class="contact-form-block animate-on-scroll">
                         <h3>Send Us a Message</h3>
-                        <!-- This form is for display only. For functionality, integrate with a service like Formspree.io -->
-                        <form action="YOUR_FORMSPREE_OR_FORM_SERVICE_URL" method="POST">
+                        
+<form action="YOUR_FORMSPREE_OR_FORM_SERVICE_URL" method="POST">
                             <label for="name">Your Name:</label>
                             <input type="text" id="name" name="name" required>
 
@@ -1175,8 +1189,8 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    
+<footer class="footer">
         <div class="container">
             <div class="footer-nav-links">
                 <li><a href="#hero">Home</a></li>
@@ -1184,8 +1198,8 @@
                 <li><a href="#why-choose-us">Why Us</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li> <!-- Add your Privacy Policy page here -->
-            </div>
+                <li><a href="#">Privacy Policy</a></li> 
+</div>
             <ul class="social-links">
                 <li><a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
@@ -1197,8 +1211,8 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    
+<button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <script>
         // Preloader Logic
